@@ -1,0 +1,6 @@
+<h1>Heroes</h1>
+<div *ngFor="let hero of heroes">
+  <h2>{{ hero.name | uppercase }} </h2>
+  <input id="name" [(ngModel)]="hero.name">
+  <p>{{ hero.id }} </p>
+</div>
